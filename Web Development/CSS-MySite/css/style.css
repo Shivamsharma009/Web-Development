@@ -1,39 +1,133 @@
 body{
+  color: #40514E;
   margin: 0;
   text-align: center;
   top:100px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+  font-family: 'Merriweather', serif;
 }
 h1{
+  color: #66BFBF;
   margin-top: 0;
+  font-size: 90px;
+  font-family: 'Sacramento', cursive;
+  line-height: 2;
 }
-
+h2{
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+h3{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: None;
+  width: 4%;
+  margin: 100px auto;
+}
 .top-container{
   background-color: #E4F9F5;
   position: relative;
   padding-top: 100px;
 }
 .middle-container{
-  background-color: red;
-  width: 200px;
-  height: 200px;
+  margin: 100px 0;
+
 }
 .bottom-container{
-  background-color: blue;
-  width: 200px;
-  height: 200px;
+background-color: #66BFBF;
+padding: 50px 0 20px;
 }
+
 .top-cloud{
   position: absolute;
   right: 300px;
   top:50px;
 }
+.p{
+  line-height: 2;
+
+}
+a{
+  color:#11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin:10px 0 20px;
+  text-decoration: none;
+}
+a:hover{
+  color:#EAF6F6;
+}
+.copyright{
+  color:#EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+
+}
+.skill-row{
+  width: 50%;
+  margin:100px auto 100px auto;
+  text-align: left;
+
+}
+.code-img{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.chilli-img{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.code-skill-desc{
+  padding-left: 200px;
+}
+.My-img{
+  width: 18%;
+}
+.intro{
+  width:30%;
+  margin: auto;
+}
+.contact-message{
+  width: 40%;
+  margin:40px auto 80px;
+}
 .pro {
   text-decoration: underline;
+
 }
 
 .bottom-cloud{
   position:absolute;
   left: 300px;
   bottom: 300px;
+}
+.myButton {
+	box-shadow: 0px 0px 20px 8px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:10px;
+	border:2px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:12px 13px;
+	text-decoration:none;
+	text-shadow:0px 6px 11px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
