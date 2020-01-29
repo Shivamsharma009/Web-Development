@@ -48,6 +48,32 @@ document.querySelector('.btn-roll').addEventListener('click',function() {
         }
 });
 
+//hold function
+document.querySelector('.btn-hold').addEventListener('click',function(){
+
+   //Add Current score to global scores
+   scores[activePlayer] += roundScore;
+
+   //update the UI
+   document.querySelector('#score-' +activePlayer).textContent = scores[activePlayer];
+
+   //check if player won the game.
+   if(scores[activePlayer] >= 20){
+     document.querySelector('#name-' +activePlayer).textContent = 'Winner!';
+     document.querySelector('dice').style.display = 'none';
+     document.querySelector('.player-' +activePlayer +'-panel').classList.add('Winner!');
+     document.querySelector('.player' +activePlayer + '-panel').classList.remove('active');
+   }
+   else
+   {
+     //nextPlayer
+     nextPlayer();
+   }
+
+   //nextPlayer
+   nextPlayer();
+
+});
 
 function nextPlayer(){
   //next player
