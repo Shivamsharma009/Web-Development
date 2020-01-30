@@ -1,5 +1,5 @@
 //Function constructor and Inheritance
-/*
+
 var john = {
   name: 'John',
   yearofBirth:1990,
@@ -32,10 +32,10 @@ mark.calculateAge();
 console.log(john.lastName);
 console.log(jane.lastName);
 console.log(mark.lastName);
-*/
+
 //Another way to create Objects in that case the function inherent the property which
 //i mention in the prototype.
-/*
+
 var personProto = {
   calculateAge:function(){
     console.log(2016 - this.yearofBirth);
@@ -54,12 +54,12 @@ var jane = Object.create(personProto,
   yearofBirth : { value :1969},
   job: { value : 'designer'}
 });
-*/
+
 
 //Primitive vs Objects
 
  //Primitive
- /*
+
  var a = 23;
  var b = a;
  a = 46;
@@ -93,7 +93,7 @@ change(age , obj);
 
 console.log(age);
 console.log(obj.city);
-*/
+
 ///////////////////
 ////////Passing Function as argument in js
 var years = [1990,1965,1937,2005,1998];
